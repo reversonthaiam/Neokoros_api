@@ -1,0 +1,26 @@
+@layout('main')
+@section('content')
+  <h1 class="mb-5 text-center">Verifica Numero</h1>
+  <form action="{{ route('/add')}}" method="post">
+    <div class="mb-3">
+      <label class="" for="">Adicione um numero de 0 a 100</label>
+      <input type="number" class="form-control is-invalid" value="" placeholder="Numero">
+      <div class="invalid-feedback">
+        error!
+
+      </div>
+    </div>
+  
+
+ 
+    <div class="alert alert-success" role="alert">
+      <h4 class="alert-heading">Resultado do numero inserido!</h4>
+      <p>Este numero 43 é PAR</p>
+      <hr>
+      <p class="mb-0">Insira outro numero para um novo teste</p>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Inserir</button>
+  </form>
+  
+@endsection
